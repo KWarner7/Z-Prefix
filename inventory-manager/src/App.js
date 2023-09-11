@@ -4,7 +4,8 @@ import { Container, Box } from '@mui/material';
 import MainPage from './MainPage';
 import LoginPage from './LoginPage';
 import AdminPage from './AdminPage';
-import VisitorPage from './LoginPage';
+import VisitorPage from './VisitorPage';
+import CreateAccount from './CreateAccount';
 
 function App() {
   const [workouts, setWorkouts] = useState([]);
@@ -17,6 +18,7 @@ function App() {
               <Route path="/LoginPage" element={<LoginPage />} />
               <Route path="/AdminPage" element={<AdminPage />} />
               <Route path="/VisitorPage" element={<VisitorPage />} />
+              <Route path="/CreateAccount" element={<CreateAccount />} />
             </Routes>
           </Box>
         </Container>
