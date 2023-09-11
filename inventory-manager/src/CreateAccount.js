@@ -2,21 +2,18 @@ import React, { useState } from 'react';
 import { Button, Container, TextField, Typography, Paper } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const LoginPage = () => {
+const CreateAccount = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     const navigate = useNavigate();
 
-    const handleLogin = (e) => {
+    const handleCreation = (e) => {
         e.preventDefault();
-        if (username === 'admin' && password === 'password') {
+        if (username === 'username' && password === 'password') {
             setIsLoggedIn(true);
-            navigate("/AdminPage");
-        }else if(username === 'visitor' && password === 'password123'){
-            setIsLoggedIn(true);
-            navigate("/VisitorPage");
+            navigate("/");
         } else {
             alert('Invalid username or password');
         }
@@ -34,7 +31,7 @@ const LoginPage = () => {
                         <Typography variant="h5" align="center" gutterBottom>
                             Login
                         </Typography>
-                        <form onSubmit={handleLogin}>
+                        <form onSubmit={handleCreation}>
                             <TextField
                                 variant="outlined"
                                 margin="normal"
@@ -72,4 +69,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default CreateAccount;
