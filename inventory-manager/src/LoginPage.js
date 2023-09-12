@@ -21,7 +21,6 @@ const LoginPage = () => {
             alert('Invalid username or password');
         }
     };
-
     return (
         <Container component="main" maxWidth="xs">
             <Paper elevation={3} style={{ padding: '20px', marginTop: '20vh' }}>

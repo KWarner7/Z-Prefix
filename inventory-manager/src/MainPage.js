@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, CardActionArea, CardContent, Typography, Container, Grid, Box, CardMedia, Button, Paper, } from '@mui/material';
+import { Card, CardActionArea, CardContent, Typography, Container, Grid, Box, CardMedia } from '@mui/material';
 
 function MainPage() {
   return (

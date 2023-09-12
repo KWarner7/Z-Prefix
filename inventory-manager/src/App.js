@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Container, Box } from '@mui/material';
 import MainPage from './MainPage';
@@ -8,7 +8,6 @@ import VisitorPage from './VisitorPage';
 import CreateAccount from './CreateAccount';
 
 function App() {
-  const [workouts, setWorkouts] = useState([]);
   return (
       <div>
         <Container>
